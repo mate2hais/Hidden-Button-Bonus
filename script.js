@@ -1,5 +1,5 @@
 function generateButtons(button, input) {
-  let numberOfBtn = input.value;
+  numberOfBtn = input.value;
   for (let index = 1; index <= numberOfBtn; ++index) {
     let newButton = document.createElement("button");
     newButton.className = "btn btn-success";
