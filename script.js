@@ -1,5 +1,5 @@
 function generateButtons(button, input) {
-  numberOfBtn = input.value;
+  let numberOfBtn = input.value;
   for (let index = 1; index <= numberOfBtn; ++index) {
     let newButton = document.createElement("button");
     newButton.className = "btn btn-success";
@@ -10,7 +10,7 @@ function generateButtons(button, input) {
 
 let flag = 1;
 function handleClick() {
-  winnerId = Math.ceil(Math.random() * numberOfBtn + 1);
+  let winnerId = Math.ceil(Math.random() * numberOfBtn + 1);
   const output = document.querySelector('#randomText');
   if (numberOfBtn == winnerId && flag === 1) {
     output.textContent += "Congratulations! ";
